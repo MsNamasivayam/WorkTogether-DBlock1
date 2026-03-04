@@ -11,6 +11,7 @@ public class Backend {
         Backend backend = new Backend();
     }
     public String getUserName(){
+        // Gets user first name
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter your first name: ");
         return scan.nextLine();
