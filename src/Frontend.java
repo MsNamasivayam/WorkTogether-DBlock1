@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 
+
+
 public class Frontend extends JFrame {
     public static final int WINDOW_WIDTH = 800;
     public static final int WINDOW_HEIGHT = 800;
@@ -29,7 +31,10 @@ public class Frontend extends JFrame {
         g.setColor(Color.BLACK);
         g.setFont(new Font("Serif", Font.BOLD, HEADER_FONT_SIZE));
         g.drawString("About You", (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 200);
+        g.setFont(new Font("SansSerif", Font.BOLD, 18));
+        g.drawString(backend.getFavorite(), 500, WINDOW_WIDTH/2);
 
         // TODO: Paint Personal Information Here
+
     }
 }
