@@ -29,6 +29,7 @@ public class Frontend extends JFrame {
         g.setColor(Color.BLACK);
         g.setFont(new Font("Serif", Font.BOLD, HEADER_FONT_SIZE));
         g.drawString("About You", (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 200);
+        g.drawString(backend.getUserName(), 300, 600);
 
         // TODO: Paint Personal Information Here
     }
