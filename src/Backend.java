@@ -16,4 +16,10 @@ public class Backend {
         System.out.println("What is your favorite meal?");
         return input.nextLine();
     }
+
+    public String favAnimal(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is your favorite meal?");
+        return input.nextLine();
+    }
 }

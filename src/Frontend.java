@@ -32,6 +32,7 @@ public class Frontend extends JFrame {
 
         // TODO: Paint Personal Information Here
         g.drawString(backend.favMeal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 500);
+        g.drawString(backend.favAnimal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 350);
 
     }
 }
