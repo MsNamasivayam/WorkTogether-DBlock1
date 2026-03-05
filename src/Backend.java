@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Backend {
@@ -32,6 +31,15 @@ public class Backend {
 
     }
 
+    public String favMeal(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is your favorite meal? ");
+        return input.nextLine();
+    }
 
-
+    public String favAnimal(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is your favorite Animal? ");
+        return input.nextLine();
+    }
 }
