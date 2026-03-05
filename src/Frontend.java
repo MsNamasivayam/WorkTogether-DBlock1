@@ -8,6 +8,10 @@ public class Frontend extends JFrame {
     private static final int HEADER_FONT_SIZE = 50;
     private static final int NORMAL_FONT_SIZE = 20;
 
+    private String birthMonth;
+    private String birthDay;
+    private String birthYear;
+
     private Backend backend;
 
     public Frontend(Backend backend) {
@@ -17,6 +21,13 @@ public class Frontend extends JFrame {
         this.setTitle("Work Together");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
+    }
+
+    public void results(String birthMonth, String birthDay, String birthYear) {
+        this.birthMonth = birthMonth;
+        this.birthDay = birthDay;
+        this.birthYear = birthYear;
+        repaint();
     }
 
     @Override
@@ -30,6 +41,6 @@ public class Frontend extends JFrame {
         g.setFont(new Font("Serif", Font.BOLD, HEADER_FONT_SIZE));
         g.drawString("About You", (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 200);
 
-        // TODO: Paint Personal Information Here
+        g.drawString();
     }
 }
