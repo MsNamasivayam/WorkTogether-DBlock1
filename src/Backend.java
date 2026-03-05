@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Backend {
     private Frontend window;
 
@@ -9,4 +11,9 @@ public class Backend {
         Backend backend = new Backend();
     }
 
+    public String favMeal(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is your favorite meal?");
+        return input.nextLine();
+    }
 }
