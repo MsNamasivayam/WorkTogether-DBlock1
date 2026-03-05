@@ -19,7 +19,7 @@ public class Backend {
 
     public String favAnimal(){
         Scanner input = new Scanner(System.in);
-        System.out.println("What is your favorite meal?");
+        System.out.println("What is your favorite Animal?");
         return input.nextLine();
     }
 }
