@@ -8,6 +8,10 @@ public class Frontend extends JFrame {
     private static final int HEADER_FONT_SIZE = 50;
     private static final int NORMAL_FONT_SIZE = 20;
 
+    private static final int FavAnimalY = 350;
+    private static final int FAVMEALY = 500;
+    private static final int STARTY = 200;
+
     private Backend backend;
 
     public Frontend(Backend backend) {
@@ -28,11 +32,11 @@ public class Frontend extends JFrame {
         // About You
         g.setColor(Color.BLACK);
         g.setFont(new Font("Serif", Font.BOLD, HEADER_FONT_SIZE));
-        g.drawString("About You", (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 200);
+        g.drawString("About You", (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), STARTY);
 
         // TODO: Paint Personal Information Here
-        g.drawString(backend.favMeal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 500);
-        g.drawString(backend.favAnimal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), 350);
+        g.drawString(backend.favMeal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), FAVMEALY);
+        g.drawString(backend.favAnimal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), FavAnimalY);
 
     }
 }
