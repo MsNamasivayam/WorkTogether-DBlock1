@@ -21,6 +21,7 @@ public class Frontend extends JFrame {
         this.setTitle("Work Together");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
+
     }
 
     @Override
@@ -35,6 +36,10 @@ public class Frontend extends JFrame {
         g.drawString("About You", (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), STARTY);
 
         // TODO: Paint Personal Information Here
+
+        g.setFont(new Font("Serif", Font.PLAIN, 20));
+        g.drawString(backend.getJoke(), 150, 400);
+
         g.drawString(backend.favMeal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), FAVMEALY);
         g.drawString(backend.favAnimal(), (WINDOW_WIDTH/2)-(HEADER_FONT_SIZE*2), FavAnimalY);
 
